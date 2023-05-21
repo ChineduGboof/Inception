@@ -13,7 +13,7 @@ build:
 	@docker-compose -f srcs/docker-compose.yml --env-file srcs/.env up -d --build
 
 up:
-	docker-compose up --remove-orphans
+	@docker-compose -f srcs/docker-compose.yml --env-file srcs/.env up -d
 
 down:
 	@echo "\033[33mStopping configuration $(NAME)...\033[0m"
