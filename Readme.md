@@ -1,14 +1,17 @@
-#inception
+## Inception
 
-Project inception (school 42/21).
+Project Inception (42 Abudhabi).
 
 This set of guides is intended for the phased implementation of the inception project.
 
-Follow the guide and conclude the installation of all needed for the inception from the start to the bonus.
-After that, follow the additional steps to adjust certain issues made in the guide that 
-are not part of the subjects requirements.
+## Must Read
+> Follow the guide below and conclude the installation of all needed for the inception project
+> from the start (Mandatory) to the bonus.
+> After that, follow the additional steps to adjust certain issues made in the guide that 
+> are not part of the subjects requirements and could potentially affect your grades in the project.
+> * Remember to remove the .env file when submitting to your git repository
 
-## Project steps
+## Mandatory
 
 Briefly about the stages of the project:
 
