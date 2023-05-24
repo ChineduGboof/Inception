@@ -34,3 +34,5 @@ Briefly about the stages of the project:
 - [X] Installing portainer - guide [guide 13](https://github-com.translate.goog/codesshaman/inception/blob/main/13_PORTAINER_INSTALL.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp "Installing portainer")
 
 ## Corrections
+
+- [X] Automated SSL Certificate Installation - guide [guide 14](https://github.com/ChineduGboof/Inception/blob/main/Readme/Fixing_Certificates.md "Automated SSL Certificate Installation")
