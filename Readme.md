@@ -36,3 +36,4 @@ Briefly about the stages of the project:
 ## Corrections
 
 - [X] Automated SSL Certificate Installation - guide [guide 14](https://github.com/ChineduGboof/Inception/blob/main/Readme/Fixing_Certificates.md "Automated SSL Certificate Installation")
+- [X] Creating A Dockerfile for Portainer - guide [guide 14](https://github.com/ChineduGboof/Inception/blob/main/Readme/Fixing_Portainer.md "Creating A Dockerfile for Portainer")
