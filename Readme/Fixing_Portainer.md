@@ -11,7 +11,7 @@ As you would have noticed by now, the portainer installation in the previous gui
         RUN apk add --no-cache docker
 
 
-    ## ADJUSTED DOCKER-COMPOSE.YML FILE
+## ADJUSTED DOCKER-COMPOSE.YML FILE
 
     version: '3'
 
@@ -190,3 +190,27 @@ As you would have noticed by now, the portainer installation in the previous gui
     inception:
         # Set the network driver to bridge
         driver: bridge
+
+## Notes
+
+Alright, let's dive into the exciting world of Dockerizing Portainer and tinkering with the docker-compose.yml file. But hold on, there are a few things you should know that will make your Docker journey even more delightful!
+First things first, we created a super simple dockerfile for Portainer. It's nothing fancy, just the basics to get Portainer up and running smoothly. Easy peasy!. 
+
+Now, let's talk about the changes we made in the docker-compose.yml file.
+
+1. We waved goodbye to the ports in the Mariadb and WordPress sections. Why, you ask? Well, our             subject-mandatory diagram insists that these services should only be accessed through the port 443 (Nginx). It's all about that secure connection, folks!
+
+<img width="750" alt="Inception" src="https://github.com/ChineduGboof/Inception/assets/111196709/da656d14-7677-474f-9336-cb61c465cd11">
+
+2. Next, keep an eye out for the image segment with the service names. We made sure to follow the rule that each Docker image should have the same name as its corresponding service. However, when it comes to Portainer, there's a twist. We need to include the version number as well, like this: "portainer/portainer-ce:2.9.3". Pretty specific, right? Try removing the version number and see your portainer fail!
+You could explain this to the evaluator or change your portainer container name to "portainer/portainer-ce:2.9.3", but it makes no sense to me to do that. 
+
+3. Last but not least, we spiced things up by changing "restart: always" to "restart: on-failure" in the docker-compose.yml file. It just feels more appropriate for our project. We want our containers to bounce back like champions when faced with failure!
+
+Now go forth, fellow Docker enthusiast, and embrace the wonders of Portainer and compose files. May your Docker journey be filled with joy, laughter, and flawless container orchestration!
+
+
+
+
+
+
