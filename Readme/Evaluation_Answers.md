@@ -112,7 +112,7 @@ By incorporating Redis into the Inception project, it helps enhance the overall 
 To interact with Redis using the Redis CLI, you can follow these commands:
 
 # Log into the Redis CLI
-docker exec -it redis redis-cli
+`docker exec -it redis redis-cli`
 
 # Verify connectivity with Redis
 `PING`
