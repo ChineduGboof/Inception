@@ -57,13 +57,13 @@ Nginx can use SSL/TLS to encrypt traffic between the server and the client. When
 
 ## My Choice of Alpine over Debian
 
-| Alpine                                                      | Debian                                                     |
-|-------------------------------------------------------------|------------------------------------------------------------|
-| Smaller image size due to the use of a musl libc and BusyBox | Larger image size due to the use of a glibc and more packages |
-| Faster startup time and lower resource usage                 | Slower startup time and higher resource usage               |
-| More secure due to its minimalistic design                   | Potentially less secure due to the larger number of packages and services running in the image |
-| More suitable for running in resource-constrained environments | More suitable for running in environments with ample resources |
-| Less mature ecosystem with fewer pre-built packages          | More mature ecosystem with a larger number of pre-built packages |
+| Alpine                                                         | Debian                                                                                         |
+|----------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| Smaller image size due to the use of a musl libc and BusyBox   | Larger image size due to the use of a glibc and more packages                                  |
+| Faster startup time and lower resource usage                   | Slower startup time and higher resource usage                                                  |
+| More secure due to its minimalistic design                     | Potentially less secure due to the larger number of packages and services running in the image |
+| More suitable for running in resource-constrained environments | More suitable for running in environments with ample resources                                 |
+| Less mature ecosystem with fewer pre-built packages            | More mature ecosystem with a larger number of pre-built packages                               |
 
 ## What is Docker-Network?
 
@@ -81,6 +81,24 @@ Docker volumes are a way to persist data generated or used by Docker containers.
 
 Adminer provides a user-friendly and intuitive interface for managing databases, making it easy to interact with your database system without requiring extensive knowledge of command-line tools or complex configurations.
 
+## Using Adminer
+
+To access Adminer and manage your MySQL database, follow these steps:
+
+Open a web browser and enter the URL: `http://localhost:8080`
+
+On the Adminer login page, enter the following details:
+
+- System: `MySQL`
+- Server: `mariadb`
+- Username: `wpuser`
+- Password: `wppass`
+- Database: `wordpress`
+
+These credentials will allow you to connect to your MySQL database using Adminer and perform various database management tasks.
+
+Please note that the provided credentials (username, password, server, and database) are placeholders. Make sure to replace them with the actual credentials for your specific setup if you changed them.
+
 ## Redis
 
 Redis is a software tool that is used to store and retrieve data quickly. It is often used as a cache, which means it temporarily stores data in memory to improve the performance of applications. Caching is beneficial because it allows applications to fetch data faster, reducing the need to access slower data sources such as databases.
@@ -89,9 +107,58 @@ In the Inception project, Redis is installed and used to improve the performance
 
 By incorporating Redis into the Inception project, it helps enhance the overall performance and responsiveness of the application, reduces the load on the main database, and enables efficient communication between different components.
 
+## Working with Redis CLI
+
+To interact with Redis using the Redis CLI, you can follow these commands:
+
+# Log into the Redis CLI
+docker exec -it redis redis-cli
+
+# Verify connectivity with Redis
+`PING`
+# Output: PONG
+
+# Set a key-value pair
+`SET mykey "Hello, Redis!"`
+
+# Retrieve the value of a key
+`GET mykey`
+
+Using the above commands, you can log into the Redis CLI, verify the connection, set a key-value pair, and retrieve the value associated with a specific key.
+
 ## VSFTPD | FILEZILLA
 
 `vsftpd` (Very Secure FTP Daemon) is an FTP server software that allows you to set up an FTP (File Transfer Protocol) server on your machine. It provides a way for clients (users) to connect to the server and transfer files between the client and the server.
 
-Feel free to format and upload these texts to your Git README.md file.
+## Using FileZilla with vsftpd
+
+To access FileZilla using vsftpd, you can follow these steps:
+
+1. Ensure you have started the X server by running the command sudo startx.
+
+2. Right-click on the desktop and navigate to "Applications" and select "Internet," then choose "FileZilla" from the list.
+
+3. In the FileZilla interface, enter the following details:
+
+Host: `127.0.0.1`
+Username: `ftpuser`
+Password: `ftppass`
+Port: `21`
+
+These credentials will allow you to establish a connection between FileZilla and the vsftpd server running on your local machine.
+- Please note that the provided credentials (username and password) are placeholders, and you should replace them with the appropriate login details for your vsftpd server if you changed them.
+
+## Portainer
+
+Portainer is an open-source container management tool that provides a user-friendly web interface for managing Docker environments. It offers a graphical interface for managing containers, images, volumes, networks, and more. With Portainer, you can easily monitor and control your Docker resources without the need for complex command-line interactions.
+
+In the Inception project, Portainer was used to simplify the management and monitoring of the Docker containers and services. It provided an intuitive interface for visualizing the containerized application's infrastructure, inspecting logs, managing container configurations, and monitoring resource utilization. Portainer made it easier for developers and administrators to interact with the Docker environment, simplifying tasks such as starting and stopping containers, scaling services, and troubleshooting issues.
+
+With Portainer's user-friendly interface, team members could easily collaborate and manage the Docker-based application, even without deep knowledge of Docker commands. It enhanced the development workflow, improved productivity, and provided a centralized management platform for the containerized application.
+
+## How to access Portainer
+
+To access Portainer, open a web browser and enter the URL `https://localhost:9443` or `http://localhost:8000`, depending on the server's configuration. This will take you to the Portainer login page. If this is your first time accessing Portainer, you will need to set up an initial admin user and password. Follow the on-screen instructions to complete the setup process.
+
+Once logged in, you will have access to the Portainer dashboard, where you can manage your Docker environment, containers, networks, volumes, and more.
 
