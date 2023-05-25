@@ -44,13 +44,13 @@ Briefly about the stages of the project:
 
 You've done it! The moment has arrived to unveil your masterpiece. Follow these final steps to bring it all to life:
 
-In your command line, enter the command <pre><code>make fclean</code></pre>. Watch as it gracefully clears all running containers, making way for the beautiful transformation that awaits.
+In your command line, enter the command <pre><code>make fclean</code></pre> Watch as it gracefully clears all running containers, making way for the beautiful transformation that awaits.
 
-Now, brace yourself and unleash the ultimate command: <pre><code>make all</code></pre>. Like a conductor leading a symphony, this command orchestrates the rebuilding of it all. Sit back and witness the containers coming to life, one by one.
+Now, brace yourself and unleash the ultimate command: <pre><code>make all</code></pre> Like a conductor leading a symphony, this command orchestrates the rebuilding of it all. Sit back and witness the containers coming to life, one by one.
 
-Curiosity piqued? Satiate it by running the command <pre><code>docker ps</code></pre>. Behold the beauty of your containers standing tall, ready to fulfill their purpose in this grand performance.
+Curiosity piqued? Satiate it by running the command <pre><code>docker ps</code></pre> Behold the beauty of your containers standing tall, ready to fulfill their purpose in this grand performance.
 
-And there you have it! With a few keystrokes, you've breathed life into your creation. Take a moment to appreciate your accomplishment and revel in the power of your commands.
+And there you have it! With a few keystrokes, you've breathed life into your creation Take a moment to appreciate your accomplishment and revel in the power of your commands.
 
 Now, go forth and conquer the world with your magnificent creation!
 
